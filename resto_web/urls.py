@@ -21,13 +21,7 @@ from django.urls import path, include
 from home import views
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("",include("home.urls")),
-    path("booking/",include("home.urls")),
-    path("contact/",include("home.urls")),
-    path("menu/",include("home.urls")),
-    path("service/",include("home.urls")),
-    path("about/",include("home.urls")),
-    path("team/",include("home.urls"))
+    path("",include("home.urls"))
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
