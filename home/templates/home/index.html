@@ -367,7 +367,7 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Book A Table Online</h1>
-                        <form action="{% url 'handle_booking_data'%}" method="post">
+                        <form action="{% url 'handle_booking_data'%}" method="POST">
                             {% csrf_token %}
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -540,7 +540,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                <form>
+                                <form method="POST">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">
